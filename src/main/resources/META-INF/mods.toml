@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="MIT"
+
+[[mods]]
+modId="hiddenabilityannouncer"
+version="0.0.1"
+displayName="Hidden Ability Announcer"
+displayURL="https://github.com/NebuloSystemServices" # URL HERE
+credits="https://github.com/NebuloSystemServices" # Your name here
+authors="https://github.com/NebuloSystemServices" # Your name here
+description='''
+Description of the mod here
+'''
+
+[[dependencies.hiddenabilityannouncer]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.hiddenabilityannouncer]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.hiddenabilityannouncer]]
+    modId="pixelmon"
+    mandatory=true
+    versionRange="[9.1.3,)"
+    ordering="NONE"
+    side="BOTH"
