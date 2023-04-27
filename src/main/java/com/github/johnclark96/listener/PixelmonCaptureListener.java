@@ -3,6 +3,7 @@ package com.github.johnclark96.listener;
 import com.pixelmonmod.pixelmon.api.events.CaptureEvent;
 import com.pixelmonmod.pixelmon.api.pokemon.Pokemon;
 import com.pixelmonmod.pixelmon.api.pokemon.species.abilities.Abilities;
+import com.pixelmonmod.pixelmon.entities.DenEntity;
 import com.pixelmonmod.pixelmon.entities.pixelmon.PixelmonEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.util.text.StringTextComponent;
@@ -17,7 +18,7 @@ public class PixelmonCaptureListener {
         ServerPlayerEntity player = event.getPlayer();
 
         if(pokemon.hasHiddenAbility()) {
-            player.sendMessage(new StringTextComponent("You caught a " + pokemon.getDisplayName() + " with its hidden ability" + pokemon.getAbilityName() + "!"), player.getUUID());
+            player.sendMessage(new StringTextComponent("You caught a " + pokemon.getDisplayName() + " with its hidden ability " + pokemon.getAbilityName() + "!"), player.getUUID());
         } else {
             player.sendMessage(new StringTextComponent("You caught a " + pokemon.getDisplayName() + "!"), player.getUUID());
         }
